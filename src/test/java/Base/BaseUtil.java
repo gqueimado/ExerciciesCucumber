@@ -8,7 +8,6 @@ public class BaseUtil {
     public WebDriver driver;
 
     public void openBrowser()
-
     {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\GQ\\Desktop\\Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
@@ -16,6 +15,10 @@ public class BaseUtil {
     }
 
     public void closeBrowser()
+    {
+        driver.close();
+    }
+    public void quitBrowser()
     {
         driver.close();
     }

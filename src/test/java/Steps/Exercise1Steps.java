@@ -4,12 +4,12 @@ import Base.BaseUtil;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.Test;
+
 
 public class Exercise1Steps extends BaseUtil {
    String url, Current;
 
-    @Test
+
     @Given("^I am at demoqa page$")
     public void iAmAtDemoqaPage() throws Throwable {
 
@@ -20,7 +20,7 @@ public class Exercise1Steps extends BaseUtil {
         int TitleLenght = driver.getTitle().length();
         System.out.println(Title);
         System.out.println(TitleLenght);
-         Current = driver.getCurrentUrl();
+        Current = driver.getCurrentUrl();
     }
 
     @When("^Do Stuff$")

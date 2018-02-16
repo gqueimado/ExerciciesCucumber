@@ -1,5 +1,6 @@
 Feature: Exercise 2
-@Test
+
+  @Test
   Scenario: Click on New Window
 
     Given I am at Windows demoqa page

@@ -23,7 +23,8 @@ public class Exercise2Steps extends BaseUtil {
     @Then("^Appears a new Window$")
     public void appearsANewWindow() throws Throwable {
         System.out.println("User Name");
-        closeBrowser();
-    }
+        quitBrowser();
+
+}
 
 }
