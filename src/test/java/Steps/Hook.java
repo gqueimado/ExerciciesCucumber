@@ -14,13 +14,13 @@ public class Hook extends BaseUtil {
     @Before
     public void InitializeTest()
     {
-        System.out.println("Opening the browser : Mock\b");
+        System.out.println("\bOpening the browser\b");
     }
 
     @After
     public void TearDownTest()
     {
-        System.out.println("\bClosing the browser : Mock");
+        System.out.println("\bClosing the browser\b");
     }
 
 }

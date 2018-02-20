@@ -7,25 +7,24 @@ import cucumber.api.java.en.When;
 
 
 public class Exercise1Steps extends BaseUtil {
-   String url, Current;
+   String  Current;
 
 
     @Given("^I am at demoqa page$")
     public void iAmAtDemoqaPage() throws Throwable {
 
         openBrowser();
-        url = "http://www.store.demoqa.com";
-        driver.get(url);
+        openqapage();
+
+    }
+
+    @When("^Do Stuff$")
+    public void doStuff() throws Throwable {
         String Title = driver.getTitle();
         int TitleLenght = driver.getTitle().length();
         System.out.println(Title);
         System.out.println(TitleLenght);
         Current = driver.getCurrentUrl();
-    }
-
-    @When("^Do Stuff$")
-    public void doStuff() throws Throwable {
-
         if (url == Current) {
             System.out.println("Verification Successful - The correct Url is opened.");
         } else {

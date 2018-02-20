@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseUtil {
 
     public WebDriver driver;
+    public String url;
 
     public void openBrowser()
     {
@@ -20,7 +21,13 @@ public class BaseUtil {
     }
     public void quitBrowser()
     {
-        driver.close();
+        driver.quit();
     }
+
+    public void openqapage(){
+        url = "http://www.store.demoqa.com";
+        driver.get(url);
+    }
+
 
 }
