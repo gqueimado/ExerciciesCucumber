@@ -1,6 +1,6 @@
 Feature: Login
 
-  @Test
+
   Scenario: Do the Login Process
     Given I navigate to the login page
     And I enter the following for login

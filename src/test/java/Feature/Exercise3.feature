@@ -1,6 +1,6 @@
 Feature: Exercise 3
 
-  @Test
+
   Scenario: Page actions
 
     Given I am at demoqa page and do some actions

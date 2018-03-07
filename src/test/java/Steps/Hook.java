@@ -1,8 +1,9 @@
 package Steps;
 
 import Base.BaseUtil;
-import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.testng.annotations.AfterMethod;
+
 
 public class Hook extends BaseUtil {
     public Hook(BaseUtil base) {
@@ -17,11 +18,19 @@ public class Hook extends BaseUtil {
         System.out.println("\bOpening the browser\b");
     }
 
-    @After
-    public void TearDownTest()
+    // It will execute after every test execution
+    @AfterMethod
+    public void tearDown()
     {
-        System.out.println("\bClosing the browser\b");
+        driver.quit();
     }
+
+
+    /*public void Teste(){
+        WebElement Marcas = driver.findElement(By.id(""));
+        Select Marca = new Select(Marcas);
+        Marca.selectByIndex(2);
+    }*/
 
 }
 

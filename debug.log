@@ -4,3 +4,6 @@
 [0219/165855.632:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0219/165855.632:ERROR:exception_snapshot_win.cc(88)] thread ID 3332 not found in process
 [0219/165855.632:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0301/174000.530:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0301/174000.532:ERROR:exception_snapshot_win.cc(88)] thread ID 3876 not found in process
+[0301/174000.532:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
